@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+    <nav >
+        <div class="navbar-brand">
+            <a href="#">ENIA</a>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">SmartGear</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="navbar-search">
+            <input type="text" id="search" placeholder="Search products...">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="navbar-cart">
+            <!-- <a href="#"><img src="cart-icon.png" alt="Cart"></a> -->
+        </div>
+    </nav>
+    </div>
+    <div class="filter">
+        <div class="filter-label-block">
+            <label class="filter-label">Filters</label>
+        </div>
+        <div class="categories-label-block">
+            <label class="categories-label">Categories</label>
+        </div>
+        <div class="category-block">
+            <label class="checkboxes jewelery">
+                <input type="checkbox" value="jewelery" class="category-filter"> Jewelery
+            </label>
+            <label class="checkboxes electronics">
+                <input type="checkbox" value="electronics" class="category-filter"> Electronics
+            </label>
+            <label class="checkboxes men's">
+                <input type="checkbox" value="men's clothing" class="category-filter"> Men's Clothing
+            </label>
+            <label class="checkboxes women's">
+            <input type="checkbox" value="women's clothing" class="category-filter"> Women's Clothing
+            </label>
+        </div>
+    </div>
+    <div class="sort">
+        <select id="sort" class="sort-select">
+            <option value="title">Sort by Name</option>
+            <option value="price">Sort by Price</option>
+        </select>
+    </div>
+    <div class="grid-container" id="grid-container">
+    </div>
+    <button id="load-more" class="load-more">Load More</button>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
